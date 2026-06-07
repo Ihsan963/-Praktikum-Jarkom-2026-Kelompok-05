@@ -1,18 +1,12 @@
 # Tugas Modul 4 — DMZ & Firewall Configuration
 
-**Mata Kuliah:** Jaringan Komputer  
-**Nama Kelompok:** [Isi nama kelompok]  
-**Anggota:** [Isi nama anggota]  
-**Nomor Kelompok:** [Isi nomor kelompok]  
-
 ---
 
 ## 1. Topologi Jaringan
 
-> 📸 *Sisipkan screenshot topologi dari PNETLab di sini*
-
 ```
-[Gambar Topologi]
+<img width="1370" height="1236" alt="image" src="https://github.com/user-attachments/assets/60ac9dc0-4b4a-4f25-9c5d-f1738699885a" />
+
 ```
 
 Topologi yang digunakan terdiri dari beberapa zona jaringan:
@@ -340,4 +334,5 @@ Konsep yang dipelajari dalam modul ini — segmentasi jaringan, DMZ, NAT, firewa
 
 ---
 
-*Dokumentasi ini dibuat sebagai bagian dari Tugas Modul 4: DMZ & Firewall Configuration*
+<img width="1296" height="1158" alt="Screenshot 2026-06-06 232115" src="https://github.com/user-attachments/assets/b33b5b4a-9051-4ab2-b728-7724dfdcb7b0" />
+
