@@ -3,9 +3,10 @@
 ---
 
 ## 1. Topologi Jaringan
+<img width="1296" height="1158" alt="Screenshot 2026-06-06 232115" src="https://github.com/user-attachments/assets/c6263efb-56e9-4cda-841c-55d0bd923ffd" />
 
 ```
-<img width="1370" height="1236" alt="image" src="https://github.com/user-attachments/assets/60ac9dc0-4b4a-4f25-9c5d-f1738699885a" />
+
 
 ```
 
@@ -40,11 +41,8 @@ Topologi yang digunakan terdiri dari beberapa zona jaringan:
 ## 3. Konfigurasi Tiap Perangkat
 
 ### 3.1 MikroTik ISP
-
-> 📸 *Sisipkan screenshot konfigurasi MikroTik di sini*
-
+<img width="1336" height="1220" alt="Screenshot 2026-06-06 232523" src="https://github.com/user-attachments/assets/2a0cd9d4-480a-42db-9f00-a1cb0f84b65d" />
 ```
-[Screenshot: /ip address print, /ip route print, /ip firewall nat print, /ip dhcp-client print]
 ```
 
 Konfigurasi yang diterapkan:
@@ -58,25 +56,28 @@ Konfigurasi yang diterapkan:
 
 ### 3.2 FortiGate (Firewall Utama)
 
-> 📸 *Sisipkan screenshot konfigurasi FortiGate part 1 (show system interface) di sini*
+<img width="876" height="1228" alt="Screenshot 2026-06-06 232530" src="https://github.com/user-attachments/assets/4d48009c-fb10-4b1e-b7b8-b0a02fa12e10" />
+
 
 ```
 [Screenshot: Konfigurasi interface port1, port2, port3]
 ```
 
-> 📸 *Sisipkan screenshot konfigurasi FortiGate part 2 (show router static) di sini*
+<img width="1812" height="1230" alt="Screenshot 2026-06-06 232538" src="https://github.com/user-attachments/assets/7d4f9ff5-d2de-4a86-a943-3553ef94cb91" />
+
 
 ```
 [Screenshot: Static route dan default route]
 ```
 
-> 📸 *Sisipkan screenshot konfigurasi FortiGate part 3 (show firewall policy) di sini*
+<img width="1336" height="1220" alt="Screenshot 2026-06-06 232551" src="https://github.com/user-attachments/assets/c5447c13-819f-4d3b-8f86-04a83f2659d8" />
 
 ```
 [Screenshot: Policy LAN_to_WAN, LAN_to_DMZ, WAN_to_DMZ_HTTP]
 ```
 
-> 📸 *Sisipkan screenshot konfigurasi FortiGate part 4 (show firewall vip) di sini*
+<img width="2230" height="1216" alt="Screenshot 2026-06-06 232601" src="https://github.com/user-attachments/assets/167f51da-0e78-4d19-8e05-de0b8bb7e086" />
+
 
 ```
 [Screenshot: VIP VIP_DMZ — port forwarding 10.10.10.2:80 → 192.168.20.10:80]
@@ -97,13 +98,15 @@ Konfigurasi yang diterapkan:
 
 ### 3.3 Cisco Router
 
-> 📸 *Sisipkan screenshot konfigurasi Cisco part 1 (show running-config / show ip interface brief) di sini*
+<img width="1348" height="1232" alt="Screenshot 2026-06-06 232609" src="https://github.com/user-attachments/assets/8a0d7e78-f103-4431-bd52-e88dc50f5a92" />
+
 
 ```
 [Screenshot: Interface G0/0 dan G0/1 dengan IP masing-masing]
 ```
 
-> 📸 *Sisipkan screenshot konfigurasi Cisco part 2 (show ip route) di sini*
+<img width="1360" height="1232" alt="Screenshot 2026-06-06 232617" src="https://github.com/user-attachments/assets/c1007674-5417-4919-8c6a-74143488d0ab" />
+
 
 ```
 [Screenshot: Default route S* 0.0.0.0/0 via 10.20.20.1]
@@ -118,7 +121,8 @@ Konfigurasi yang diterapkan:
 
 ### 3.4 Ubuntu Server DMZ
 
-> 📸 *Sisipkan screenshot konfigurasi Ubuntu Server (ip addr show, ip route show, nginx status) di sini*
+<img width="1336" height="1232" alt="Screenshot 2026-06-06 232638" src="https://github.com/user-attachments/assets/9303cc2e-76f2-4351-b2a2-4c0b2eb34065" />
+
 
 ```
 [Screenshot: IP address 192.168.20.10/24, gateway 192.168.20.1, nginx active]
@@ -134,7 +138,8 @@ Konfigurasi yang diterapkan:
 
 ### 3.5 Client LAN (Linux3)
 
-> 📸 *Sisipkan screenshot konfigurasi IP Client LAN di sini*
+<img width="1356" height="1252" alt="Screenshot 2026-06-06 233821" src="https://github.com/user-attachments/assets/adb971b3-633a-4178-88b2-6bc1e74f0e79" />
+
 
 ```
 [Screenshot: ifconfig eth0 dan route -n Client LAN]
@@ -148,8 +153,7 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 ---
 
 ### 3.6 Client WAN (Linux2)
-
-> 📸 *Sisipkan screenshot konfigurasi IP Client WAN di sini*
+<img width="1370" height="1236" alt="Screenshot 2026-06-06 233829" src="https://github.com/user-attachments/assets/ed1bc137-6956-4e5f-ac8c-8be771fde3dc" />
 
 ```
 [Screenshot: ifconfig eth0 dan route -n Client WAN]
@@ -165,11 +169,9 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 ## 4. Hasil Pengujian
 
 ### 4.1 Client LAN ping ke Gateway Cisco (192.168.10.1)
-
-> 📸 *Sisipkan screenshot hasil ping*
+<img width="1630" height="1220" alt="Screenshot 2026-06-06 232354" src="https://github.com/user-attachments/assets/425417ad-c448-4fa7-90ad-6b85cb1631e7" />
 
 ```
-[Screenshot: ping 192.168.10.1 — BERHASIL]
 ```
 
 **Hasil:** ✅ Berhasil — 5 packets transmitted, 5 received, 0% packet loss
@@ -178,7 +180,7 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.2 Client LAN ping ke FortiGate (10.20.20.1)
 
-> 📸 *Sisipkan screenshot hasil ping*
+<img width="1580" height="1210" alt="Screenshot 2026-06-06 232403" src="https://github.com/user-attachments/assets/8a4a9767-3fa9-4cef-820f-dd3c3e838e3d" />
 
 ```
 [Screenshot: ping 10.20.20.1 — BERHASIL]
@@ -190,7 +192,8 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.3 Client LAN ping ke Server DMZ (192.168.20.10)
 
-> 📸 *Sisipkan screenshot hasil ping*
+<img width="1654" height="1230" alt="Screenshot 2026-06-06 232409" src="https://github.com/user-attachments/assets/8491c37d-3022-49d4-865d-514878eda564" />
+
 
 ```
 [Screenshot: ping 192.168.20.10 — BERHASIL]
@@ -202,7 +205,8 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.4 Client LAN akses web DMZ via browser (http://192.168.20.10)
 
-> 📸 *Sisipkan screenshot browser*
+<img width="1646" height="1214" alt="Screenshot 2026-06-06 232417" src="https://github.com/user-attachments/assets/f63f408f-fcf7-41b5-923a-bdc6037980ec" />
+
 
 ```
 [Screenshot: Firefox menampilkan halaman Nginx DMZ — BERHASIL]
@@ -214,7 +218,8 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.5 Client WAN ping ke FortiGate (10.10.10.2)
 
-> 📸 *Sisipkan screenshot hasil ping*
+<img width="1612" height="1232" alt="Screenshot 2026-06-06 232425" src="https://github.com/user-attachments/assets/511c09e6-ec90-4fb7-af0c-f9cf9352c76d" />
+
 
 ```
 [Screenshot: ping 10.10.10.2 — BERHASIL]
@@ -226,7 +231,8 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.6 Client WAN ping ke ISP MikroTik (172.16.100.1)
 
-> 📸 *Sisipkan screenshot hasil ping*
+<img width="1612" height="1214" alt="Screenshot 2026-06-06 232433" src="https://github.com/user-attachments/assets/03910cc8-9777-4aad-adea-54f4b65574da" />
+
 
 ```
 [Screenshot: ping 172.16.100.1 — BERHASIL]
@@ -238,7 +244,8 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.7 Client WAN akses web DMZ via VIP (http://10.10.10.2)
 
-> 📸 *Sisipkan screenshot browser*
+<img width="1656" height="1216" alt="Screenshot 2026-06-06 232441" src="https://github.com/user-attachments/assets/096e74a5-c928-4422-9225-fdda20db7cd9" />
+
 
 ```
 [Screenshot: Firefox menampilkan halaman Nginx via VIP — BERHASIL]
@@ -250,7 +257,7 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.8 Client WAN ping ke Client LAN (192.168.10.10) — HARUS GAGAL
 
-> 📸 *Sisipkan screenshot hasil ping*
+<img width="1614" height="1226" alt="Screenshot 2026-06-06 232448" src="https://github.com/user-attachments/assets/e3cf47f6-69e0-4bbf-a9fc-dc51c09a7d26" />
 
 ```
 [Screenshot: ping 192.168.10.10 dari Client WAN — GAGAL / 100% packet loss]
@@ -262,7 +269,8 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.9 Client WAN ping ke IP asli DMZ (192.168.20.10) — HARUS GAGAL
 
-> 📸 *Sisipkan screenshot hasil ping*
+<img width="2164" height="1258" alt="Screenshot 2026-06-06 232504" src="https://github.com/user-attachments/assets/e3bd7e1e-3862-4766-b178-4c93f2400238" />
+
 
 ```
 [Screenshot: ping 192.168.20.10 dari Client WAN — GAGAL / 100% packet loss]
@@ -274,7 +282,8 @@ Konfigurasi yang diterapkan (dari `ifconfig eth0` dan `route -n`):
 
 ### 4.10 Server DMZ ping ke Client LAN (192.168.10.10) — HARUS GAGAL
 
-> 📸 *Sisipkan screenshot hasil ping*
+<img width="1624" height="1238" alt="Screenshot 2026-06-06 232514" src="https://github.com/user-attachments/assets/fc59224f-c9ff-4bab-aadc-78fe8eedd2a1" />
+
 
 ```
 [Screenshot: ping 192.168.10.10 dari Server DMZ — GAGAL / 100% packet loss]
@@ -334,5 +343,4 @@ Konsep yang dipelajari dalam modul ini — segmentasi jaringan, DMZ, NAT, firewa
 
 ---
 
-<img width="1296" height="1158" alt="Screenshot 2026-06-06 232115" src="https://github.com/user-attachments/assets/b33b5b4a-9051-4ab2-b728-7724dfdcb7b0" />
 
