@@ -224,7 +224,7 @@ Kedua site dihubungkan menggunakan **GRE Tunnel** antar FortiGate, dengan **OSPF
 
 
 
-**3. `/ip dhcp-relay print ip route print`**
+**2. `/ip dhcp-relay print ip route print`**
 
 
 <img width="2108" height="1164" alt="Screenshot 2026-06-14 015626" src="https://github.com/user-attachments/assets/4b42d639-fe12-4554-be60-c195986aa950" />
@@ -232,7 +232,7 @@ Kedua site dihubungkan menggunakan **GRE Tunnel** antar FortiGate, dengan **OSPF
 
 
 
-**5. Ping dari MikroTik ke FortiGate Jakarta (`ping 10.10.101.1`)**
+**3. Ping dari MikroTik ke FortiGate Jakarta (`ping 10.10.101.1`)**
 
 <img width="2358" height="1232" alt="Screenshot 2026-06-14 015652" src="https://github.com/user-attachments/assets/473ec849-d9c3-4815-a1ac-14c9c0708f66" />
 
@@ -249,12 +249,12 @@ Kedua site dihubungkan menggunakan **GRE Tunnel** antar FortiGate, dengan **OSPF
 <img width="2880" height="1250" alt="Screenshot 2026-06-14 020724" src="https://github.com/user-attachments/assets/68315b9f-50b8-4757-a162-2b8e9f115d38" />
 
 
-**3. Isi file `/etc/dhcp/dhcpd.conf`**
+**2. Isi file `/etc/dhcp/dhcpd.conf`**
 
 <img width="1302" height="1234" alt="Screenshot 2026-06-14 015707" src="https://github.com/user-attachments/assets/c8f64cfc-ac02-474a-b773-51a54115e54f" />
 
 
-**4. `ping 8.8.8.8`**
+**3. `ping 8.8.8.8`**
 
 <img width="960" height="1236" alt="Screenshot 2026-06-14 015753" src="https://github.com/user-attachments/assets/9278865b-b585-42b7-83b2-817e4f6aea78" />
 
@@ -321,7 +321,7 @@ ping fortigate Surabaya`**
 
 ### Bukti MikroTik Surabaya
 
-**3. `/ip address print
+**2. `/ip address print
 /ip dhcp-server print
 /ip pool print
 /ip route print`**
@@ -329,7 +329,7 @@ ping fortigate Surabaya`**
 <img width="1048" height="1236" alt="Screenshot 2026-06-14 015914" src="https://github.com/user-attachments/assets/b7fe138a-42a9-4c07-8f05-ecd467c31f6c" />
 
 
-**7. Client VLAN 30 mendapat IP DHCP dan Ping client Surabaya ke 8.8.8.8**
+**3. Client VLAN 30 mendapat IP DHCP dan Ping client Surabaya ke 8.8.8.8**
 
 <img width="1498" height="1262" alt="Screenshot 2026-06-14 015932" src="https://github.com/user-attachments/assets/6eafd58f-6c2e-4017-90bf-1704ce62222b" />
 
@@ -352,7 +352,7 @@ ping fortigate Surabaya`**
 <img width="1124" height="1234" alt="Screenshot 2026-06-14 020522" src="https://github.com/user-attachments/assets/b7d471ad-29a1-4f87-a658-fe74b5707a5e" />
 <img width="2200" height="1244" alt="Screenshot 2026-06-14 020528" src="https://github.com/user-attachments/assets/50d58c0d-2e01-43b8-a5c6-0fd2e88ce31f" />
 
-**4. `ping 8.8.8.8
+**3. `ping 8.8.8.8
 ping IP tunnel Jakarta
 get router info ospf neighbor
 get router info routing-table ospf`**
