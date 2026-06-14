@@ -205,7 +205,7 @@ Kedua site dihubungkan menggunakan **GRE Tunnel** antar FortiGate, dengan **OSPF
 **Hal yang dikonfigurasi:** Sub-interface VLAN 10/20/60, VRRP (Master VLAN 10 & 60), DHCP Relay ke Ubuntu Server, link ke FortiGate Jakarta.
 
 ### Bukti
-**1. Ping dari Cisco Router ke FortiGate Jakarta (`ping 10.10.100.1`)**
+**1. Show IP Interface Brief, Show vrrp brief, ping 10.10.100.1**
 <img width="2016" height="1224" alt="Screenshot 2026-06-14 015028" src="https://github.com/user-attachments/assets/29f79062-8c26-47af-b8b7-fc3a49331763" />
 
 
